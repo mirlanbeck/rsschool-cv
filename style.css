@@ -124,6 +124,12 @@ footer {
   color: white;
 }
 
+.rs-school-logo {
+  width: 120px;
+  height: 45px;
+  background-repeat: no-repeat;
+}
+
 @media (max-width: 1440px) {
   .container {
     padding: 0 20px;
