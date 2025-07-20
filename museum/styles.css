@@ -1,0 +1,266 @@
+body {
+  width: 1920px;
+  margin: 0 auto;
+}
+
+header {
+  width: 1920px;
+  height: 150px;
+  /* flex-shrink: 0; */
+  background-color: #030303;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 1920px;
+  display: flex;
+  justify-content: center;
+}
+
+/* .header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.nav-list {
+  display: flex;
+  width: 775px;
+  height: 26px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 55px;
+  flex-shrink: 0;
+  padding-left: 100px;
+}
+
+.nav-item {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  letter-spacing: 2px;
+  list-style-type: none;
+}
+
+.logo-container {
+  display: flex;
+  width: 199px;
+  height: 33px;
+  /* flex-shrink: 0; */
+  gap: 15px;
+}
+
+.logo {
+  width: 49px;
+  height: 26px;
+  flex-shrink: 0;
+}
+
+.logo-text {
+  color: #fff;
+  font-family: Forum;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+main {
+  display: flex;
+  /* width: 1440px; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 75px;
+}
+
+.welcome-section {
+  width: 1920px;
+  height: 842px;
+  /* flex-shrink: 0; */
+  display: flex;
+  justify-content: center;
+  background-color: #030303;
+}
+
+.welcome-section h1 {
+  width: 593px;
+  color: #fff;
+  font-family: Forum;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90px; /* 112.5% */
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.welcome-section h2 {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+
+.welcome {
+  width: 598px;
+  height: 388px;
+  flex-shrink: 0;
+}
+
+.welcome button {
+  width: 360px;
+  height: 75px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #710707;
+}
+
+#welcome p {
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+
+.welcome-section img {
+  width: 1000px;
+  height: 750px;
+  /* flex-shrink: 0; */
+}
+
+.virtual-tour {
+  width: 1440px;
+  /* height: 1116px; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.virtual-tour h2 {
+  justify-content: center;
+  color: #9d8665;
+  font-family: Forum;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  /* line-height: 90px; 112.5% */
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.tour-sites {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.line {
+  width: 1440px;
+  height: 3px;
+  background-color: #710707;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.short-line {
+  width: 300px;
+  height: 2px;
+}
+
+h3 {
+  color: #000;
+  font-family: Forum;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.view-360 {
+  color: #000;
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+}
+
+.panorama-view {
+  color: #000;
+  font-family: Roboto;
+  font-size: px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+}
+
+.explore-section {
+  width: 1920px;
+  display: flex;
+  justify-content: center;
+  background-color: #030303;
+  flex-direction: row;
+}
+
+.explore-section h2 {
+  color: #fff;
+  font-family: Forum;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90px; /* 112.5% */
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.explore {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 660px;
+}
+.explore-section img {
+  display: flex;
+  justify-content: center;
+}
+
+.explore p {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 38.5px; /* 175% */
+}
+
+.mid-line {
+  width: 600px;
+  height: 3px;
+  background: #710707;
+}
