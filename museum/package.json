@@ -1,0 +1,17 @@
+{
+  "name": "museum",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://rolling-scopes-school.github.io/rsschool-cv/museum",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
