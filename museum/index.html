@@ -22,11 +22,11 @@
             </div>
             <nav class="nav">
                 <ul class="nav-list">
-                    <li class="nav-item">Welcome</li>
-                    <li class="nav-item">Visiting</li>
-                    <li class="nav-item">Explore</li>
-                    <li class="nav-item">Video</li>
-                    <li class="nav-item">Gallery</li>
+                    <li class="nav-item> <a href=" #welcome"></a> ">Welcome</li>
+                    <li class="nav-item" <a href="#visiting">Visiting</li>
+                    <li class="nav-item" <a href="#explore">Explore</li>
+                    <li class="nav-item" <a href="#video">Video</li>
+                    <li class="nav-item" <a href="#welcome">Gallery</li>
                     <li class="nav-item">Tickets</li>
                     <li class="nav-item">Contacts</li>
                 </ul>
@@ -112,33 +112,104 @@
                 <img src="assets/img/explore-slider/before.jpg" alt="picture before">
             </div>
         </section>
-        <section class="container video-section">
-            <div>
-                <div class="video-description">
-                    <h2>Video journey</h2>
-                    <p>Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona
-                        Lisa or Hammurabi's Code</p>
-                </div>
-                <div class="video-players">
-                    <div class="video-player main">
-                        <video src="assets/video/video0.mp4" poster="assets/video/poster0.jpg"></video>
-                        <div class="video-controls">
-                            <button id="playPauseBtn"><svg width="23" height="31" viewBox="0 0 23 31" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M23 15.5053L0 0C0 23.3683 0 11.8996 0 31L23 15.5053Z" fill="#B3B3B3">
-                                    </path>
-                                </svg></button>
-                            <input type="range" id="scrollBar" min="0" max="100" value="53">
-                            <output name="value" class="output" for="range"></output>
-                        </div>
-                    </div>
-                    <div class="video-player bottom"></div>
+        <section id="video" class="video-section">
+            <div class="container video-container">
+                <h2>Video journey</h2>
+                <div class="line mid-line"></div>
+
+                <video class="main-video" controls poster="assets/video/poster0.jpg">
+                    <source src="assets/video/video0.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+
+                <div class="video-previews">
+                    <video controls poster="assets/video/poster1.jpg">
+                        <source src="assets/video/video1.mp4" type="video/mp4" />
+                    </video>
+                    <video controls poster="assets/video/poster2.jpg">
+                        <source src="assets/video/video2.mp4" type="video/mp4" />
+                    </video>
+                    <video controls poster="assets/video/poster3.jpg">
+                        <source src="assets/video/video3.mp4" type="video/mp4" />
+                    </video>
                 </div>
             </div>
         </section>
-        <section>Gallery</section>
-        <section>Tickets</section>
-        <section>Contacts</section>
+        <section id="gallery" class="gallery-section">
+            <div class="container gallery-container">
+                <h2>Art Gallery</h2>
+                <div class="line mid-line"></div>
+                <div class="gallery-columns">
+                    <div class="gallery-col">
+                        <img src="assets/img/galery/galery1.jpg" alt="">
+                        <img src="assets/img/galery/galery4.jpg" alt="">
+                        <img src="assets/img/galery/galery7.jpg" alt="">
+                        <img src="assets/img/galery/galery10.jpg" alt="">
+                    </div>
+                    <div class="gallery-col">
+                        <img src="assets/img/galery/galery2.jpg" alt="">
+                        <img src="assets/img/galery/galery5.jpg" alt="">
+                        <img src="assets/img/galery/galery8.jpg" alt="">
+                        <img src="assets/img/galery/galery11.jpg" alt="">
+                    </div>
+                    <div class="gallery-col">
+                        <img src="assets/img/galery/galery3.jpg" alt="">
+                        <img src="assets/img/galery/galery6.jpg" alt="">
+                        <img src="assets/img/galery/galery9.jpg" alt="">
+                        <img src="assets/img/galery/galery12.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="tickets" class="tickets-section">
+            <div class="container tickets-container">
+                <div class="ticket-image">
+                    <img src="assets/img/tickets/tickets.png" alt="Gallery painting">
+                </div>
+                <div class="ticket-content">
+                    <h2>buy tickets</h2>
+
+                    <form class="ticket-form">
+                        <div class="radio-group">
+                            <label><input type="radio" name="exhibition" checked> Permanent exhibition</label>
+                            <label><input type="radio" name="exhibition"> Temporary exhibition</label>
+                            <label><input type="radio" name="exhibition"> Combined Admission</label>
+                        </div>
+
+                        <div class="select-row">
+                            <div class="select-block">
+                                <label for="ticket-type">Ticket Type</label>
+                                <select id="ticket-type">
+                                    <option>Basic</option>
+                                    <option>Senior</option>
+                                    <option>Student</option>
+                                </select>
+                            </div>
+                            <div class="select-block">
+                                <label for="ticket-amount">Amount</label>
+                                <select id="ticket-amount">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="buy-row">
+                            <span class="price">Total €0</span>
+                            <button type="submit">Buy now</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
     <footer></footer>
 </body>
