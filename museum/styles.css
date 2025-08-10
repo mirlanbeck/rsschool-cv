@@ -1,45 +1,61 @@
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
-  width: 1920px;
   margin: 0 auto;
 }
 
+h2 {
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: Forum;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 header {
-  width: 1920px;
+  width: 100%;
+  max-width: 100%;
   height: 150px;
-  /* flex-shrink: 0; */
   background-color: #030303;
   display: flex;
   justify-content: center;
 }
 
 .container {
-  width: 1920px;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
-/* .header-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
 .nav {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
 }
 
 .nav-list {
   display: flex;
-  width: 775px;
   height: 26px;
   justify-content: space-between;
   align-items: center;
   gap: 55px;
-  flex-shrink: 0;
-  padding-left: 100px;
 }
 
 .nav-item {
@@ -57,14 +73,12 @@ header {
   display: flex;
   width: 199px;
   height: 33px;
-  /* flex-shrink: 0; */
   gap: 15px;
 }
 
 .logo {
   width: 49px;
   height: 26px;
-  flex-shrink: 0;
 }
 
 .logo-text {
@@ -78,189 +92,968 @@ header {
   text-transform: uppercase;
 }
 
+/* Main block*/
 main {
   display: flex;
-  /* width: 1440px; */
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 75px;
 }
 
+/* Welcome Section */
 .welcome-section {
-  width: 1920px;
-  height: 842px;
-  /* flex-shrink: 0; */
+  max-width: 100%;
+  height: 810px;
+  width: 100%;
   display: flex;
   justify-content: center;
   background-color: #030303;
 }
 
-.welcome-section h1 {
-  width: 593px;
-  color: #fff;
-  font-family: Forum;
-  font-size: 80px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 90px; /* 112.5% */
-  letter-spacing: 5px;
-  text-transform: uppercase;
+.welcome-section .container {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 60px;
 }
 
-.welcome-section h2 {
+.welcome-section__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 630px;
+  margin-right: -158px;
+}
+
+.welcome-section__inner h1 {
+  color: #fff;
+  font-family: Forum;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 80px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.welcome-section__inner p {
   color: #fff;
   font-family: Roboto;
   font-size: 28px;
   font-style: normal;
   font-weight: 300;
-  line-height: normal;
-  letter-spacing: 2px;
+  line-height: 1.179;
+  letter-spacing: 0.07em;
+  margin-bottom: 70px;
 }
 
-.welcome {
-  width: 598px;
-  height: 388px;
-  flex-shrink: 0;
-}
-
-.welcome button {
-  width: 360px;
+.welcome-section__inner button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 75px;
-  flex-shrink: 0;
+  line-height: 1;
+  border: none;
   border-radius: 10px;
   background: #710707;
-}
-
-#welcome p {
   color: #fff;
-  text-align: center;
-  font-family: Roboto;
+  width: 360px;
   font-size: 22px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  letter-spacing: 2px;
 }
 
-.welcome-section img {
-  width: 1000px;
+.welcome-section__visual {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  overflow: hidden;
+}
+
+.welcome-section__visual::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 10%;
+  height: 100%;
+  background: linear-gradient(to right, #030303 0%, transparent 100%);
+  z-index: 1;
+}
+
+.welcome-section__visual img {
+  width: 100%;
   height: 750px;
-  /* flex-shrink: 0; */
+  display: block;
+  position: relative;
+  z-index: 0;
+  object-fit: cover;
 }
 
+/* Virtual tour */
 .virtual-tour {
-  width: 1440px;
-  /* height: 1116px; */
+  background-color: #fff;
+  max-width: 100%;
+}
+
+.virtual-tour__inner {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
 }
 
 .virtual-tour h2 {
-  justify-content: center;
-  color: #9d8665;
-  font-family: Forum;
   font-size: 80px;
-  font-style: normal;
-  font-weight: 400;
-  /* line-height: 90px; 112.5% */
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  margin-top: 0;
+  margin-bottom: 75px;
+  letter-spacing: 0.06em;
+  color: #9d8665;
+  line-height: 90px;
+}
+
+.heading_divider {
+  padding-bottom: 20px;
+  border-bottom: 3px solid #710707;
 }
 
 .tour-sites {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.line {
-  width: 1440px;
-  height: 3px;
-  background-color: #710707;
-  display: flex;
-  justify-content: center;
-  box-sizing: border-box;
-}
-
-.short-line {
-  width: 300px;
-  height: 2px;
-}
-
-h3 {
+.tour-site-cards h3 {
   color: #000;
   font-family: Forum;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: 5px;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
 }
 
 .view-360 {
-  color: #000;
-  font-family: Roboto;
   font-size: 22px;
+  font-family: Roboto;
   font-style: normal;
   font-weight: 200;
   line-height: normal;
 }
 
 .panorama-view {
-  color: #000;
+  font-size: 18px;
   font-family: Roboto;
-  font-size: px;
   font-style: normal;
   font-weight: 200;
   line-height: normal;
 }
 
+/* Explore section */
 .explore-section {
-  width: 1920px;
+  max-width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   background-color: #030303;
+  padding: 75px 0;
+}
+
+.explore-section .container {
+  max-width: 1440px;
+  display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
 }
 
-.explore-section h2 {
+.explore-info {
+  max-width: 660px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+}
+
+.explore-info h2 {
+  font-size: 67px;
+  margin-top: 0;
+  margin-bottom: 55px;
+  letter-spacing: 0.06em;
   color: #fff;
-  font-family: Forum;
-  font-size: 80px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 90px; /* 112.5% */
-  letter-spacing: 5px;
-  text-transform: uppercase;
+  white-space: nowrap;
 }
 
-.explore {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 660px;
-}
-.explore-section img {
-  display: flex;
-  justify-content: center;
-}
-
-.explore p {
+.explore-info p {
   color: #fff;
   font-family: Roboto;
   font-size: 22px;
   font-style: normal;
   font-weight: 300;
-  line-height: 38.5px; /* 175% */
+  line-height: 38.5px;
 }
 
-.mid-line {
-  width: 600px;
-  height: 3px;
+/* === NEW SLIDER STYLES === */
+
+.explore-visual {
+  width: 100%;
+  display: flex;
+  padding-top: 10px;
+  justify-content: center;
+}
+
+.slider-container {
+  position: relative;
+  width: 720px;
+  height: 500px;
+  overflow: hidden;
+  user-select: none;
+}
+
+.image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image--after {
+  z-index: 1;
+}
+
+.image--before-wrapper {
+  z-index: 2;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: width 0.2s ease;
+}
+
+.image--before {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 40px;
+  cursor: ew-resize;
+  z-index: 3;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background-color: white;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.slider-icon {
+  width: 32px;
+  height: 32px;
+  background-color: white;
+  border: 3px solid #000;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  user-select: none;
+  z-index: 1;
+}
+
+/* VIDEO SECTION*/
+.video-section {
+  width: 100%;
+  background-color: #fff;
+  margin: 0;
+  height: 100%;
+}
+
+.video__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.video-info {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  height: auto;
+  flex-wrap: nowrap;
+  margin-top: 55px;
+  margin-bottom: 55px;
+}
+
+.video-info h2 {
+  color: #9d8665;
+  font-size: 80px;
+  line-height: 90px;
+  margin: 0;
+  flex: 0 0 650px;
+  max-width: 650px;
+  min-width: 0;
+  letter-spacing: 0;
+}
+
+.video-info p {
+  color: #030303;
+  font-family: Roboto, sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  margin: 0;
+  line-height: 1.75;
+  flex: 0 0 700px;
+  align-content: center;
+  max-width: 700px;
+  min-width: 0;
+}
+
+/*VIDEO PLAYER*/
+
+.custom-player {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  background: black;
+  margin-bottom: 30px;
+}
+
+.custom-video {
+  width: 100%;
+  display: block;
+}
+
+.center-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 2;
+}
+
+.center-play svg {
+  width: 100%;
+  height: 100%;
+}
+
+.controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.controls button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.controls input[type="range"] {
+  accent-color: red;
+  cursor: pointer;
+}
+
+/* */
+.progress {
+  flex-grow: 1;
+}
+
+.progress input[type="range"] {
+  width: 100%;
+  appearance: none;
+  background: transparent;
+  height: 6px;
+  cursor: pointer;
+}
+
+/* WebKit (Chrome, Edge, Safari) */
+.progress input[type="range"]::-webkit-slider-runnable-track {
+  height: 6px;
+  background: linear-gradient(
+    to right,
+    #710707 var(--progress-percent, 0%),
+    #ccc var(--progress-percent, 0%)
+  );
+  border-radius: 2px;
+}
+
+/* Firefox */
+.progress input[type="range"]::-moz-range-track {
+  height: 6px;
+  background: linear-gradient(
+    to right,
+    #710707 var(--progress-percent, 0%),
+    #ccc var(--progress-percent, 0%)
+  );
+  border-radius: 2px;
+}
+
+/* Ползунок */
+.progress input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  background: #9d8665;
+  border-radius: 50%;
+  margin-top: -4px;
+}
+.progress input[type="range"]::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  background: #9d8665;
+  border: none;
+  border-radius: 50%;
+}
+
+/* VIDEO SLIDER STYLES */
+/* === VIDEO SLIDER (ровно 3 карточки во вьюпорте) === */
+.video-carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+/* wrapper = «вьюпорт» карусели, равняется ширине плеера */
+.carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  column-gap: 30px; /* расстояние между карточками как на макете */
+}
+
+.carousel-slide {
+  /* Ширину задаёт JS: 0 0 <px>. Здесь оставляем авто */
+  flex: 0 0 auto;
+  height: 240px; /* как у тебя сейчас */
+  border-radius: 6px;
+  overflow: hidden;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-slide iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* стрелки + буллеты — как были */
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 15px;
+}
+.carousel-arrow {
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-bullets {
+  display: flex;
+  gap: 10px;
+}
+.carousel-bullets span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #bbb;
+  cursor: pointer;
+}
+.carousel-bullets .active {
+  background: #000;
+}
+
+/* ===== GALLERY SECTION ===============*/
+.gallery-section {
+  background-color: #000;
+  padding: 80px 0;
+  width: 100%;
+}
+
+.gallery__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-section h2 {
+  font-size: 80px;
+  margin-top: 0%;
+  margin-bottom: 60px;
+  color: #f2f2f2;
+  text-align: start;
+  line-height: 90px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.gallery-grid.wrapper {
+  position: relative;
+  height: 1911px;
+  overflow-y: hidden;
+}
+
+.gallery-item {
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transform: translateY(50px) scale(0.95);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  display: block;
+  object-fit: cover;
+}
+
+.gallery-item.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.gallery-item.dark {
+  filter: brightness(0.6);
+}
+
+/* ---------------------------------------------------------*/
+/* =================== PARALLAX ==========================*/
+/* ----------------------------------------------------  */
+.parallax {
+  height: 400px;
+}
+
+.parallax__inner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/img/parallax.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -10;
+}
+
+/* --------------------------------------------------*/
+/*============ TICKETS =============================*/
+/* -------------------------------------------------*/
+
+.tickets-section {
+  background-color: #ffffff;
+  padding: 65px;
+}
+
+.tickets__inner {
+  flex-direction: column;
+}
+
+.tickets__inner h2 {
+  color: #9d8665;
+  font-size: 80px;
+  line-height: 90px; /* 112.5% */
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+/* левая колонка с изображением фиксированного размера */
+.tickets__visual {
+  flex: 0 0 720px; /* ширина картинки по макету */
+  height: 550px; /* высота по макету */
+  overflow: hidden;
+}
+
+.tickets__visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tickets__content {
+  display: flex;
+  gap: 60px;
+  color: #000;
+  margin-top: 30px;
+  align-items: stretch;
+}
+
+.tickets__buy {
+  display: flex;
+  flex: 0 0 530px;
+  padding: 25px 30px 30px;
+}
+
+.tickets__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.tickets__form__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 60px;
+  align-items: start;
+}
+
+.tickets__fieldset {
+  /* display: flex;
+  width: 45%;
+  flex-direction: column; */
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.tickets__amount {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+}
+
+.tickets__amount h3 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tickets__type_legend {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+  margin-bottom: 48px;
+}
+
+.tickets__radio {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  font-family: Roboto;
+  font-size: 22px;
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+
+.tickets__radio:last-child {
+  margin-bottom: 0;
+}
+.tickets__radio input[type="radio"] {
+  display: none;
+}
+
+.tickets__radio-custom {
+  width: 17px;
+  height: 17px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  position: relative;
+  flex: 0 0 17px;
+}
+
+.tickets__radio-custom::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
   background: #710707;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.15s ease;
+}
+
+/* активное состояние радио */
+.tickets__radio input[type="radio"]:checked + .tickets__radio-custom {
+  border-color: #710707;
+}
+.tickets__radio input[type="radio"]:checked + .tickets__radio-custom::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* кнопка купить внизу карточки */
+.tickets__btn {
+  margin-top: auto; /* прижать вниз */
+  align-self: flex-end;
+  height: 45px;
+  padding: 0 28px;
+  background: #710707;
+  color: #fff;
+  border: 0;
+  border-radius: 2px;
+  font: 500 18px/45px Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+/* -------------------------------------------------------*/
+/* ======================= PARALLAX ==================== */
+
+.parallax__inner {
+  width: 100%;
+  min-height: 400px;
+  background-image: url(assets/img/parallax.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* ---------------------------------------------------- */
+/* ================= CONTACTS section ==================*/
+
+.contacts-section {
+  background-color: #fff;
+  padding: 75px;
+  color: #000;
+  font-family: Roboto;
+}
+
+.contacts__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__inner h2 {
+  color: #9d8665;
+  font-size: 80px;
+  line-height: 90px; /* 112.5% */
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+.contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.contacts__title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: normal;
+  margin-bottom: 50px;
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  list-style: none;
+}
+
+.contacts__item {
+  font-size: 22px;
+  line-height: 1.2;
+  height: auto;
+}
+
+/* ====== CONTACTS: MAP (Leaflet) ====== */
+.contacts__map {
+  flex: 0 0 720px; /* под макет */
+  height: 620px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* листовская обёртка должна занять весь блок */
+.contacts__map .leaflet-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* делаем контролы аккуратнее */
+.leaflet-control-zoom {
+  border-radius: 6px;
+}
+.leaflet-control-attribution {
+  font-size: 10px;
+}
+
+/* ====== SVG‑маркеры «каплей» ====== */
+/* базовая геометрия — управляем размером одной точкой */
+.map-pin {
+  --pin-size: 26px; /* общий размер маркера */
+  --pin-fill: #333333; /* заливка по умолчанию */
+  --pin-stroke: #ffffff; /* белая окантовка */
+  --pin-shadow: rgba(0, 0, 0, 0.18);
+  width: var(--pin-size);
+  height: var(--pin-size);
+  filter: drop-shadow(0 1px 2px var(--pin-shadow));
+}
+.map-pin.primary {
+  --pin-fill: #111111; /* главный маркер темнее, как на скрине */
+}
+
+/** --------------------------------       */
+/*================ FOOTER ======================================*/
+
+.footer {
+  background-color: #030303;
+}
+
+.footer__inner {
+  /* margin-top: 70px; */
+  padding: 75px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 145px;
+  width: 700px;
+  height: 143px;
+}
+
+.footer__list {
+  column-count: 2;
+  column-fill: balance;
+  column-gap: 150px;
+}
+
+.footer__item {
+  line-height: normal;
+  font-weight: 100;
+  font-size: 22px;
+  letter-spacing: 0.09em;
+  color: #fff;
+  font-family: Roboto;
+  list-style: none;
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.footer__social-media {
+  display: flex;
+  align-self: flex-end;
+  gap: 25px;
+}
+
+.footer__second-block {
+  border-top: 3px solid #666666;
+  padding: 50px;
+}
+
+.footer__second-block__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 100;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 0.09em;
+  font-family: Roboto;
+  color: #fff;
+}
+
+/* RESPONSIVE SUPPORT */
+@media (max-width: 1024px) {
+  .explore-section .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slider-container {
+    width: 100%;
+    max-width: 100%;
+    height: 400px;
+  }
+
+  .slider {
+    height: 100%;
+  }
+
+  .image,
+  .image--before-wrapper {
+    height: 100%;
+  }
+
+  .video-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .video-info h2,
+  .video-info p {
+    flex: unset;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .carousel-slide {
+    flex: 0 0 calc(100% / 2);
+  }
+
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 420px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .parallax {
+    background-attachment: scroll;
+  }
 }
