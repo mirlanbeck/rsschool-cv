@@ -25,7 +25,8 @@ Aspiring Frontend Developer. I have a solid experience in non IT project managem
 
 ### Code example
 
-```const formatName = function (name, upper = false) {
+```
+const formatName = function (name, upper = false) {
         return upper
             ? name.toUpperCase()
             : name[0].toUpperCase() + name.slice(1).toLowerCase();
