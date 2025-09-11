@@ -1,4 +1,4 @@
-g# Mirlanbek Osmonov
+## Mirlanbek Osmonov
 
 ## Junior Frontend Developer
 
