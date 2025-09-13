@@ -11,7 +11,7 @@
 
 ### About me
 
-Aspiring Frontend Developer. I have a solid experience in non IT project management. My English is very good. Good at planning, progress tracking, implementation management. Able to meet deadlines.
+I am a self-taught frontend developer with over four years of part-time learning experience in HTML, CSS, and JavaScript. Alongside building responsive websites and interactive projects, I bring a strong background in project and team management from international organizations. This mix of technical skills and organizational experience helps me approach development with structure, attention to detail, and clear communication. I am now looking to apply these strengths in a professional frontend development role
 
 ### Skills
 
