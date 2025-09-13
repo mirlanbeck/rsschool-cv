@@ -11,7 +11,7 @@
 
 ### About me
 
-Frontend developer with a solid foundation in HTML, CSS, and JavaScript currently deepening my skills in React (components, state, architecture) and Next.js (routing, server components, database integration). I have experience building responsive interfaces from Figma designs, implementing interactivity in vanilla JavaScript, and using Git/GitHub (branching, commits, pull requests). My background in project management sharpened my analytical thinking and discipline with requirements, deadlines, and feedback — skills that carry directly into a structured development process. I communicate confidently in English (C1) and am focused on growth through hands-on learning and teamwork
+I am a self-taught frontend developer with over four years of part-time learning experience in HTML, CSS, and JavaScript. Alongside building responsive websites and interactive projects, I bring a strong background in project and team management from international organizations. This mix of technical skills and organizational experience helps me approach development with structure, attention to detail, and clear communication. I am looking to apply these strengths in a professional frontend development role.
 
 ### Skills
 
