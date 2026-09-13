@@ -1,25 +1,24 @@
 ## Mirlanbek Osmonov
 
-## Junior Frontend Developer
+## Frontend Developer
 
 ### Contact information
 
 - Cell phone: +996 555 633538
 - Email: mirlan_osmonov@yahoo.com
-- LinkedIn: linkedin.com/mirlanbek-osmonov
 - Discord: Mirlanbek (@mirlanbek)
+- Telegram: https://t.me/mirlanbeck
 
 ### About me
 
-I am a self-taught frontend developer with 4–5 years of part-time learning experience in HTML, CSS, and JavaScript, now preparing to transition into the tech sector in 2025. With a strong background in international project management, I bring problem-solving, communication, and teamwork skills that complement my technical growth. I am passionate about building responsive, user-friendly web applications and continuously improving through hands-on projects. My goal is to join a collaborative development team where I can grow, contribute, and deliver value.
+Frontend developer with a solid foundation in HTML, CSS, and JavaScript currently deepening my skills in React (components, state, architecture) and Next.js (routing, server components, database integration). I have experience building responsive interfaces from Figma designs, implementing interactivity in vanilla JavaScript, and using Git/GitHub (branching, commits, pull requests). My background in project management sharpened my analytical thinking and discipline with requirements, deadlines, and feedback — skills that carry directly into a structured development process. I communicate confidently in English (C1) and am focused on growth through hands-on learning and teamwork
 
 ### Skills
 
-- HTML5, CSS3
-- JavaScript Basics
+- HTML5, CSS3, Semantic HTML, Markdonw, JavaScript, React, Next.js
 - Git, GitHub
-- VS Code
-- Generative AI Tools, Prompt generation
+- VS Code, Figma
+- Generative AI Tools, Prompt generation, Claude Code, OpenAi Codex
 
 ### Code example
 
@@ -36,17 +35,19 @@ console.log(formatName("MIRlan", true)); // MIRLAN
 
 ### Work Experience
 
-1. A simple web fighting game (https://mirlanbeck.github.io/not-fight-club/)
+1. Dashboard App (https://nextjs-dashboard-nine-delta-75.vercel.app/)
 
-2. Museum app (https://museum-dom-mirlanbeck.netlify.app/)
+2. Christmass Shop (https://rolling-scopes-school.github.io/mirlanbeck-JSFEPRESCHOOL2026Q1/)
 
-3. A simple weather forecast app (https://github.com/mirlanbeck/Weather-App)
+3. A dice game (https://mirlanbeck.github.io/dice-game/)
 
-4. An app to mark running and cycling workouts on map(https://github.com/mirlanbeck/workouts-on-map.git)
+4. A simple web fighting game (https://mirlanbeck.github.io/not-fight-club/)
 
-5. A dice game (https://github.com/mirlanbeck/dice-game.git)
+5. Museum app (https://museum-dom-mirlanbeck.netlify.app/)
 
 ### Education
+
+- 2026: RS Rschool - Frontend Development
 
 - 2025: Course "The Complete JavaScript Course: From Zero to Expert" on Udemy Online Platform.
 
@@ -61,5 +62,5 @@ console.log(formatName("MIRlan", true)); // MIRLAN
 ### Languages
 
 - English - C1/ Advanced
-- Russian - C1/ Advanced
+- Russian - C2/ Proficient
 - Kyrgyz - mother tongue
