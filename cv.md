@@ -22,7 +22,8 @@ I am a self-taught frontend developer with 4–5 years of part-time learning exp
 
 ### Code example
 
-```const formatName = function (name, upper = false) {
+```
+const formatName = function (name, upper = false) {
         return upper
             ? name.toUpperCase()
             : name[0].toUpperCase() + name.slice(1).toLowerCase();
