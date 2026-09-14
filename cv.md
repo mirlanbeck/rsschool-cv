@@ -22,12 +22,12 @@ Frontend developer with a solid foundation in HTML, CSS, and JavaScript currentl
 
 ### Code example
 
-```
+```javascript
 const formatName = function (name, upper = false) {
-        return upper
-            ? name.toUpperCase()
-            : name[0].toUpperCase() + name.slice(1).toLowerCase();
-    };
+  return upper
+    ? name.toUpperCase()
+    : name[0].toUpperCase() + name.slice(1).toLowerCase();
+};
 console.log(formatName("mirlan")); // Mirlan
 console.log(formatName("mirLAn")); // Mirlan
 console.log(formatName("mirlan", false)); // Mirlan
